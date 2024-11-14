@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ArticleController!{% endblock %}
+
+{% block body %}
+
+{% include "includes/nav.html.twig" %}
+
+{% include "includes/sidenav.html.twig" %}
+
+            <div id="layoutSidenav_content">
+
+                {% for message in app.flashes('success') %}
+
+                    <div class="alert alert-success">
+                        {{ message }}
+                    </div>
+                    
+                {% endfor %}
+
+                {{form(form)}}
+
+{% include "includes/footer.html.twig" %}
+
+            </div>
+
+{% endblock %}
