@@ -2,7 +2,6 @@
 
 namespace App\Controller;
 
-use DateTimeImmutable;
 use App\Entity\Article;
 use App\Form\ArticleType;
 use Doctrine\ORM\EntityManagerInterface;
